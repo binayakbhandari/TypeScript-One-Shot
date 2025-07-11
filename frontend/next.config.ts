@@ -15,6 +15,10 @@ const nextConfig: NextConfig = {
       {
         protocol : 'https',
         hostname : 'www.stampegrafica.plus'
+      },
+      {
+        protocol : 'https',
+        hostname : ''
       }
     ]
   }

@@ -9,7 +9,7 @@ interface Params {
 export default async function SingleNote({ params }: Params) {
   let note = null
     try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/notes/${params.noteId}`)
+        const response = await fetch(`${process.env.BACKEND_URL}/notes/${params.noteId}`)
         if (!response.ok) {
             throw new Error("Error while fetching...")
         }
